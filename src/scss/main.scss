@@ -90,6 +90,9 @@
 
 .post-item {
 	margin: 10px 0;
+	a {
+		color: inherit;
+	}
 	&:first-child {
 		margin-top: 0;
 	}
