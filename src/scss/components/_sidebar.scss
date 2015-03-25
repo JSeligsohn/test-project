@@ -2,6 +2,8 @@
 // Sidebar Styles
 //------------------------------------------------------------------------------
 
+/* Sidebar */
+
 .sidebar1 {
   width: 400px;
   padding: 2%;
@@ -12,9 +14,10 @@
     color: $brand-pink;
   }
 }
+
 .highlightbox {
-  border-radius: $border-radius-default;
   margin: 25px 0;
+  border-radius: $border-radius-default;
   color: $brand-beige-dark;
   background-color: white;
   @extend %box-shadow;
@@ -41,8 +44,8 @@
 }
 
 .social-button {
-  color: $brand-beige-dark;
   margin-right: 20px;
+  color: $brand-beige-dark;
   &:last-child {
     margin-right: 0;
   }
@@ -82,7 +85,7 @@
 }
 
 .post-item:before {
+  margin-right: 15px;
   font-family: "FontAwesome";
   content: '\f08e';
-  margin-right: 15px;
 }

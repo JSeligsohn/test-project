@@ -2,12 +2,14 @@
 // News Section Styles
 //------------------------------------------------------------------------------
 
+/* News Section */
+
 .news-section {
   margin: 50px 0;
-  background-color: $brand-beige;
   padding: 25px;
   width: 650px;
   font-size: 12px;
+  background-color: $brand-beige;
 }
 
 .news-container {
@@ -27,21 +29,21 @@
   border-radius: $border-radius-default $border-radius-default 0 0;
   behavior: url(js/PIE.htc);
   &>.row>.col:first-child {
-    border-right: 1px dashed lighten($brand-pink, 25%);
     box-sizing: border-box;
+    border-right: 1px dashed lighten($brand-pink, 25%);
   }
   &>.row>.col:last-child {
-    padding-left: $gutter;
     box-sizing: border-box;
+    padding-left: $gutter;
   }
   h2 {
-    color: white;
     margin: 20px 0;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 1px;
     text-shadow: -1px -1px darken($brand-pink, 15%);
+    color: white;
   }
 }
 
@@ -73,8 +75,8 @@
 }
 
 .img-container {
-  border: 1px solid $brand-beige-dark;
   width: 75%;
+  border: 1px solid $brand-beige-dark;
   img {
     width: 100%;
     padding: 5px;
@@ -93,8 +95,8 @@
 .news-more-link {
   color: $brand-pink;
   &:after {
-    font-family: 'FontAwesome';
     margin-left: 10px;
+    font-family: 'FontAwesome';
     content: '\f08e';
   }
 }
