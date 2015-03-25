@@ -51,3 +51,14 @@
 .footer {
   clear: both;
 }
+
+/* Grid  */
+.row {
+  width: 100%;
+  @extend %clearfix;
+}
+
+.col {
+  float: left;
+  width: 50%;
+}

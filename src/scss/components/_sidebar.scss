@@ -1,0 +1,87 @@
+// Sidebar Styles
+//------------------------------------------------------------------------------
+
+.sidebar1 {
+  width: 400px;
+  padding: 2%;
+  background-color: $brand-beige;
+  h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $brand-pink;
+  }
+}
+.highlightbox {
+  border-radius: $border-radius-default;
+  margin: 25px 0;
+  color: $brand-beige-dark;
+  background-color: white;
+  @extend %box-shadow;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  behavior: url(js/PIE.htc);
+}
+
+.highlightbox-header {
+  padding: 1% 7%;
+  border-bottom: dotted 2px $brand-beige-dark;
+}
+
+.highlightbox-content {
+  padding: 5% 7%;
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.social-button {
+  color: $brand-beige-dark;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  .fa {
+    margin-right: 5px;
+    font-size: 1.5em;
+  }
+  .fa-facebook-official {
+    color: #426099;
+  }
+  .fa-twitter-square {
+    color: #68D7FD;
+  }
+  .fa-google-plus-square {
+    color: #898989;
+  }
+  &:hover {
+    text-decoration: none;
+    color: darken($brand-beige-dark, 35%);
+  }
+}
+
+.post-items {
+  list-style: none;
+  -webkit-padding-start: 0;
+  padding-left: 0;
+}
+
+.post-item {
+  margin: 10px 0;
+  a {
+    color: inherit;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.post-item:before {
+  font-family: "FontAwesome";
+  content: '\f08e';
+  margin-right: 15px;
+}
