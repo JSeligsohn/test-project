@@ -16,15 +16,37 @@
      * Init Function
      */
     init: function() {
-      // App.feature1();
+      App.colorBoxInit();
       // App.feature2();
     },
 
     /**
      * Custom feature 1
      */
-    feature1: function() {
+    colorBoxInit: function() {
+      $('a.gallery').colorbox(
+        {
+          rel: 'news',
+          open: true,
+          loop: false,
+          onLoad: function() {
 
+          }
+        });
+
+        //Keep track of gallery items
+        var counter = 1;
+
+        $(document).bind('cbox_complete', function(){
+          if (counter == $('a.gallery').length) {
+            counter = 1;
+            setTimeout($.colorbox.close, 2000);
+          }
+          else {
+            setTimeout($.colorbox.next, 2000);
+            counter++;
+          }
+      });
     },
 
     /**

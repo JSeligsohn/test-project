@@ -10,3 +10,14 @@
     clear: both;
   }
 }
+
+%box-shadow {
+  box-shadow: 2px 2px 0 lighten($brand-beige-dark, 25%);
+}
+
+%dotted-border {
+  &>.row>.col:first-child {
+    border-right: 1px dashed $brand-beige-dark;
+    box-sizing: border-box;
+  }
+}

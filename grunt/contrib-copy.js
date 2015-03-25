@@ -24,6 +24,13 @@ module.exports = function(grunt) {
       dest: '<%= xh.dist %>/js/'
     },
 
+    colorBox: {
+      expand: true,
+      cwd: '<%= xh.src %>/bower_components/jquery-colorbox/',
+      src: ['jquery.colorbox-min.js'],
+      dest: '<%= xh.dist %>/js/'
+    },
+
     // copy assets other than images-to-be-optimized
     // (imagemin & svg2png tasks will take care of that)
     assets: {
