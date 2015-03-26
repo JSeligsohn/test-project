@@ -17,9 +17,10 @@
 
 .highlightbox {
   margin: 25px 0;
-  border-radius: $border-radius-default;
   color: $brand-beige-dark;
   background-color: white;
+  border-radius: $border-radius-default;
+  behavior: url(js/PIE.htc);
   @extend %box-shadow;
   &:first-child {
     margin-top: 0;
@@ -27,7 +28,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-  behavior: url(js/PIE.htc);
 }
 
 .highlightbox-header {
